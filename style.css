@@ -42,6 +42,7 @@
 }
 
 #hero h1 {
+  text-align: center;
   font-size: 3rem;
   position: relative;
   top: 20%;
@@ -69,7 +70,8 @@
 #hero .quote-box {
   padding: 1rem 2rem;
   height: 25rem;
-  width: 30rem;
+  min-width: 20rem;
+  max-width: 30rem;
   background-color: #FFDEE9;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#FFDEE9), to(#B5FFFC));
   background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
@@ -152,7 +154,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   padding: 15rem;
   background-color: white;
 }
@@ -189,5 +191,27 @@
   100% {
     opacity: 0;
     visibility: hidden;
+  }
+}
+
+@media (max-width: 900px) {
+  p {
+    width: 15rem;
+    font-size: .9rem;
+    text-align: center;
+  }
+  .quote-box {
+    width: 20rem;
+  }
+}
+
+@media (max-width: 375px) {
+  p {
+    width: 15rem;
+    font-size: .7rem;
+    text-align: center;
+  }
+  .quote-box {
+    width: 15rem;
   }
 }

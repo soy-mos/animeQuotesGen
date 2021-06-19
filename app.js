@@ -22,7 +22,7 @@ function renderQuote() {
     
 
 
-console.log(btnGen);
+
 
 
 
